@@ -381,3 +381,18 @@
     </div>
   </div>
 </div>
+
+<div class="container mt-3">
+
+  <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" title="hi you found me...woo!">
+    I have a message for you!
+  </button>
+</div>
+
+<script>
+// Initialize tooltips
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+</script>
