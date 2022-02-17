@@ -165,6 +165,27 @@
   </div>
 </div>
 
+
+<div class="offcanvas offcanvas-top" id="demo">
+  <div class="offcanvas-header">
+    <h1 class="offcanvas-title">Toasty!</h1>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>Some text lorem ipsum.</p>
+    <button class="btn btn-secondary" type="button">A Button</button>
+  </div>
+</div>
+
+<div class="container-fluid mt-3">
+  <h3>Top Offcanvas</h3>
+
+  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+    Toggle Top Offcanvas
+  </button>
+</div>
+
+
 <div class="container mt-3">
   <div class="card">
     <div class="card-body">Basic card</div>
@@ -470,4 +491,4 @@ var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggl
 var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
   return new bootstrap.Popover(popoverTriggerEl)
 })
-</script>            
+</script>
